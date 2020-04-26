@@ -1,0 +1,20 @@
+graph draw_graph{
+   2[ color = red, shape = box, distortion = 2, style = " filled", label =  " 2" ];
+   45[ color = cyan, shape =  doubleoctagon, distortion = 2, style = " filled", label =  " 45" ];
+   21[ color = grey, shape = ellipse, distortion = 2, style = " filled", label =  " 21" ];
+   5[ color = aquamarine, shape = circle, distortion = 2, style = " filled", label =  " 5" ];
+   120[ color = pink, shape = triangle, distortion = 2, style = " filled", label =  " 120" ];
+   65[ color = green, shape = egg, distortion = 2, style = " filled", label =  " 65" ];
+   78[ color = yellow, shape = diamond, distortion = 2, style = " filled", label =  " 78" ];
+   88[ color = aquamarine4, shape = trapezium, distortion = 2, style = " filled", label =  " 88" ];
+   99[ color = purple, shape = parallelogram, distortion = 2, style = " filled", label =  " 99" ];
+   2 -- 45[ color = red, label = " 13 "  ];
+   2 -- 21[ color = red, label = " 3 "  ];
+   2 -- 120[ color = red, label = " 5 "  ];
+   45 -- 21[ color = cyan, label = " 7 "  ];
+   21 -- 120[ color = grey, label = " 12 "  ];
+   21 -- 65[ color = grey, label = " 20 "  ];
+   5 -- 120[ color = aquamarine, label = " 30 "  ];
+   120 -- 65[ color = pink, label = " 2 "  ];
+   65 -- 65[ color = green, label = " 4 "  ];
+}
