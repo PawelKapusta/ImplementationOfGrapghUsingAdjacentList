@@ -59,24 +59,6 @@ int main() {
     edge9.setEdgeValue(23);
 
 
-    graphLinked.addEdge(vertex0,vertex1,edge0);
-    graphLinked.addEdge(vertex0,vertex2,edge1);
-
-    cout << "Are adjacent? ----------------------------------------" << endl;
-    cout << graphLinked.adjacent(vertex0,vertex1) << endl;
-    cout << graphLinked.adjacent(vertex0,vertex2) << endl;
-    cout << graphLinked.adjacent(vertex1,vertex2) << endl;
-    cout << "Neighbours between vertexes: -------------------------" << endl;
-    graphLinked.neighbours(vertex0);
-    cout << "-------------------------" << endl;
-    graphLinked.neighbours(vertex1);
-    cout << "-------------------------" << endl;
-    graphLinked.neighbours(vertex2);
-    cout << "******" << endl;
-    graphLinked.removeEdge(vertex0,vertex1);
-    graphLinked.neighbours(vertex0);
-
-
     graphLinked.addEdge(vertex0, vertex1,edge0);
     graphLinked.addEdge(vertex0, vertex2,edge1);
     graphLinked.addEdge(vertex0, vertex4,edge2);
@@ -89,13 +71,10 @@ int main() {
 
     cout << "---------------------------------" << endl;
     graphLinked.neighbours(vertex4);
-    cout << "Removing vertex4 : **************" << endl;
 
     graphLinked.print();
     graphLinked.display();
-    graphLinked.removeVertex(vertex4);
-    graphLinked.neighbours(vertex4);
-    graphLinked.print();
+
 
 
     GraphLinked graph;

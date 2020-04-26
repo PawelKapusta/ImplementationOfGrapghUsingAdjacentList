@@ -177,14 +177,6 @@ public:
             tabOfLists[numberOfVertexes - 1] = nullptr;
         }else{
 
-           // Node * temp = tabOfLists[idVertexToDelete];
-//            Node * next;
-//            while(temp != nullptr){
-//                next = temp -> next;
-//                delete(temp);
-//                temp = next;
-//            }
-//            tabOfLists[idVertexToDelete] = nullptr;
             for (int i = idVertexToDelete; i < numberOfVertexes - 1; ++i) {
                 tabOfLists[i] = tabOfLists[i+1];
             }
